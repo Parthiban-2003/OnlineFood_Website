@@ -23,31 +23,31 @@ header {
 }
 
 
-	#header img {
-		width: 65px;
-		height: 65px;
-		border-radius: 50%;
-		margin-left: 0px;
-		transition: transform 0.3s ease-in-out;
-	}
+#header img {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	margin-left: 0px;
+	transition: transform 0.3s ease-in-out;
+}
 
-		#header img:hover {
-			transform: scale(1.1);
-		}
+#header img:hover {
+	transform: scale(1.1);
+}
 
-	#header h1 {
-		color: grey;
-		font-size: 24px;
-		line-height: 1.2;
-		margin: 0;
-		margin-right: 23px;
-		flex: 1;
-		transition: color 0.3s ease-in-out;
-	}
+#header h1 {
+	color: grey;
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 0;
+	margin-right: 23px;
+	flex: 1;
+	transition: color 0.3s ease-in-out;
+}
 
-		#header h1:hover {
-			color: #ff5200;
-		}
+#header h1:hover {
+	color: #ff5200;
+}
 
 nav {
 	display: flex;
@@ -56,40 +56,89 @@ nav {
 	flex: 1;
 }
 
-	nav ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		align-items: center;
-		flex-wrap: nowrap;
-		justify-content: center;
-	}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
 
-	nav li {
-		margin-left: 40px;
-	}
+nav li {
+	margin-left: 40px;
+}
 
-	nav a {
-		text-decoration: none;
-		color: #333;
-		font-size: 16px;
-		display: flex;
-		align-items: center;
-		transition: color 0.3s, transform 0.3s;
-	}
+nav a {
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	transition: color 0.3s, transform 0.3s;
+}
 
-		nav a:hover {
-			color: #ff5200;
-			transform: scale(1.1);
-		}
+nav a:hover {
+	color: #ff5200;
+	transform: scale(1.1);
+}
 
-	nav i {
-		font-size: 20px;
-		margin-right: 8px;
-	}
+nav i {
+	font-size: 20px;
+	margin-right: 8px;
+}
 
 
 .link-text {
 	font-weight: bold;
+}
+.containe {
+	padding: 20px;
+}
+
+.food-wrapper {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.food-scroll {
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	white-space: nowrap;
+	width: 100%;
+	flex: 1;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.food-scroll::-webkit-scrollbar {
+	display: none;
+}
+
+.food-show {
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.food-show img {
+	width: 300px;
+	height: 300px;
+	border-radius: 8px;
+}
+
+.scroll-button {
+	background-color: #ff5200;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 4px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
