@@ -142,3 +142,24 @@ nav i {
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+#scroll-left {
+	left: 0;
+}
+
+#scroll-right {
+	right: 0;
+}
+
+.center {
+	padding: 20px;
+}
+
+.carousel-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 1195px;
+	height: 300px;
+	overflow: hidden;
+}
