@@ -163,3 +163,9 @@ nav i {
 	height: 300px;
 	overflow: hidden;
 }
+
+.carousel-wrapper {
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+}
