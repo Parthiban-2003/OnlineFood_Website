@@ -13,7 +13,7 @@ header {
 	padding: 10px 20px;
 }
 
-#header {
+#header_Part {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -23,7 +23,7 @@ header {
 }
 
 
-#header img {
+#header_Part img {
 	width: 65px;
 	height: 65px;
 	border-radius: 50%;
@@ -31,11 +31,11 @@ header {
 	transition: transform 0.3s ease-in-out;
 }
 
-#header img:hover {
+#header_Part img:hover {
 	transform: scale(1.1);
 }
 
-#header h1 {
+#header_Part h1 {
 	color: grey;
 	font-size: 24px;
 	line-height: 1.2;
@@ -45,18 +45,18 @@ header {
 	transition: color 0.3s ease-in-out;
 }
 
-#header h1:hover {
+#header_Part h1:hover {
 	color: #ff5200;
 }
 
-nav {
+.food_Nav {
 	display: flex;
 	align-items: center;
 	margin-left: 200px;
 	flex: 1;
 }
 
-nav ul {
+.food_Menu ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -66,11 +66,11 @@ nav ul {
 	justify-content: center;
 }
 
-nav li {
+.food_Nav li {
 	margin-left: 40px;
 }
 
-nav a {
+.food_Nav a {
 	text-decoration: none;
 	color: #333;
 	font-size: 16px;
@@ -79,21 +79,20 @@ nav a {
 	transition: color 0.3s, transform 0.3s;
 }
 
-nav a:hover {
+.food_Nav a:hover {
 	color: #ff5200;
 	transform: scale(1.1);
 }
 
-nav i {
+.food_Nav i {
 	font-size: 20px;
 	margin-right: 8px;
 }
 
-
 .link-text {
 	font-weight: bold;
 }
-.containe {
+.food_Menu {
 	padding: 20px;
 }
 
@@ -151,7 +150,7 @@ nav i {
 	right: 0;
 }
 
-.center {
+.food_Resturent {
 	padding: 20px;
 }
 

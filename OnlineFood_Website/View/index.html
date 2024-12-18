@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <div id="header">
+        <div id="header_Part">
             <img src="img/logo.svg"><br><br><br>
             <div>
                 <h1><b>Others</b></h1>
@@ -29,12 +29,11 @@
                 <br><br>
 
                 <div id="search-container">
-                    <input type="text" id="search-input" placeholder="Enter food name...">
+                    <input type="text" id="search-input" placeholder="Enter food name....">
                     <button id="search">Search</button>
                 </div>
+
                 <div id="food-details"></div>
-
-
                 <br><br>
                 <div class="location-info">
                     <h3><i class="fa-solid fa-location-crosshairs"></i> <a href="https://www.google.co.in/maps/place/%E0%AE%A4%E0%AF%87%E0%AE%A9%E0%AE%BF,+%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D+%E0%AE%A8%E0%AE%BE%E0%AE%9F%E0%AF%81/@10.0159694,77.4221713,13z/data=!3m1!4b1!4m6!3m5!1s0x3b071353e94a7877:0x962bf8fd53981722!8m2!3d10.0079322!4d77.4735441!16zL20vMDR0dnF3?entry=ttu">Get Current Location</a></h3>
@@ -42,8 +41,7 @@
                 </div>
             </div>
 
-            <nav>
-
+            <nav class="food_Nav">
                 <ul>
                     <li>
                         <a href="corporate.html">
@@ -88,16 +86,18 @@
     </header>
 
     <section>
-        <div class="containe">
+        <div class="food_Menu">
             <h1 style="font-weight: 900;font-size:30px;">What's On Your Mind?</h1>
             <div class="food-wrapper">
                 <button class="scroll-button" id="scroll-left"> < </button>
                 <div class="food-scroll">
                     <div class="food-show">
-                        <a href="biriyani.html"><img src="img/h1.avif" alt="food 1"></a>
+                        <a href="biriyani.html">
+                        <img src="img/h1.avif" alt="food 1"></a>
                     </div>
                     <div class="food-show">
-                        <a href="south.html"><img src="img/h2.avif" alt="food 2"></a>
+                        <a href="south.html">
+                        <img src="img/h2.avif" alt="food 2"></a>
                     </div>
                     <div class="food-show">
                         <img src="img/h3.avif" alt="food 3">
@@ -109,34 +109,34 @@
                         <img src="img/h5.avif" alt="food 5">
                     </div>
                     <div class="food-show">
-                        <img src="img/h6.avif" alt="food 1">
+                        <img src="img/h6.avif" alt="food 6">
                     </div>
                     <div class="food-show">
-                        <img src="img/h7.avif" alt="food 2">
+                        <img src="img/h7.avif" alt="food 7">
                     </div>
                     <div class="food-show">
-                        <img src="img/h8.avif" alt="food 3">
+                        <img src="img/h8.avif" alt="food 8">
                     </div>
                     <div class="food-show">
-                        <img src="img/h9.avif" alt="food 4">
+                        <img src="img/h9.avif" alt="food 9">
                     </div>
                     <div class="food-show">
-                        <img src="img/h10.avif" alt="food 5">
+                        <img src="img/h10.avif" alt="food 10">
                     </div>
                     <div class="food-show">
-                        <img src="img/h11.avif" alt="food 1">
+                        <img src="img/h11.avif" alt="food 11">
                     </div>
                     <div class="food-show">
-                        <img src="img/h12.avif" alt="food 2">
+                        <img src="img/h12.avif" alt="food 12">
                     </div>
                     <div class="food-show">
-                        <img src="img/h13.avif" alt="food 3">
+                        <img src="img/h13.avif" alt="food 13">
                     </div>
                     <div class="food-show">
-                        <img src="img/h14.avif" alt="food 4">
+                        <img src="img/h14.avif" alt="food 14">
                     </div>
                     <div class="food-show">
-                        <img src="img/h15.avif" alt="food 5">
+                        <img src="img/h15.avif" alt="food 15">
                     </div>
                     <button class="scroll-button" id="scroll-right"> > </button>
                 </div>
@@ -144,13 +144,123 @@
         </div>
     </section>
 
-    <div class="center">
+<section>
+    <div class="food_Resturent">
         <h1 style="font-weight: 900; font-size: 30px;text-indent: 30px;">Top Resturent In Theni</h1>
         <div class="carousel-container">
             <button class="carousel-button" id="carousel-left">&lt;</button>
             <div class="carousel-wrapper">
+                <div class="carousel">
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a1.avif" alt="food_Smoor"></a>
+                        <h2>SMOOR</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Old Mahabalipuram Road OMR</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a2.avif" alt="food_BurgerKing"></a>
+                        <h2>Burger King</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>4.3 20-25 mins</h3>
+                        <p>Burger,American<br>Kancheepuram</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"> <img src="img/a3.avif" alt="food_LaPinozPizza"></a>
+                        <h2>La Pino'z Pizza</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>4 25-30 mins</h3>
+                        <p>Pizzas, Pastas, Italian, Beverages<br>Solinganuallur</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html">
+                            <img src="img/a4.avif" alt="food_Subway">
+                        </a><h2>Subway</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>4.4 10-15 mins</h3>
+                        <p>Saldas,Snacks,Desserts<br>Solinganuallur</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a5.avif" alt="food_Maruthi"></a>
+                        <h2>Maruthi</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Old Mahabalipuram Road OMR</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a6.avif" alt="food_Annai"></a>
+                        <h2>Annai</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Pizzas, Italian<br>Old OMR</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a7.avif" alt="food_Naga"></a>
+                        <h2>Naga</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Desserts<br> OMR</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a8.avif" alt="food_Kovmari"></a>
+                        <h2>Kovmari</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Kottivakkam</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a9.avif" alt="food_PHNTD">
+                         </a><h2>PHNTD</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Pallavakam</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a10.avif" alt="food_RMPV_Fam"></a>
+                        <h2>RMPV</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Merina road</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a11.avif" alt="food_SPN"></a><h2>SPN</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Kandasavadi</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a12.avif" alt="food_NPHD"></a>
+                        <h2>NPHD</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Pallavakam</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a5.avif" alt="food_SMOTHI"></a>
+                        <h2>SMOTHI</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br> Road OMR</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a1.avif" alt="food_ROR"></a>
+                        <h2>ROR</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Old  OMR</p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="click.html"><img src="img/a8.avif" alt="food_BURGERMAN"></a>
+                        <h2>BURGER MAN</h2>
+                        <h3><i class="fa-solid fa-star" style="color: green;"></i>3.9 30-35 mins</h3>
+                        <p>Cinense,Aisan,Tibetan,Desserts<br>Old Mahabalipuram Road OMR</p>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-button" id="carousel-right">&gt;</button>
         </div>
     </div>
+</section>
 </body>
-</html>
+</html> 
