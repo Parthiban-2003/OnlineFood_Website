@@ -219,3 +219,26 @@ header {
 	right: 10px;
 }
 
+#food_Online {
+	color: #000;
+	border: 5px solid #e0e0e0;
+	border-radius: 25px;
+	padding: 10px 20px;
+	font-size: 13px;
+	font-weight: 900;
+	margin: 8px 0;
+	text-align: center;
+	width: 120px;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#food_Deley {
+	display: flex;
+	gap: 10px;
+}
+
+.main-content {
+	flex: 1;
+	padding: 20px;
+}
+
