@@ -279,6 +279,40 @@
             <button id="food_Online">Rs.300-rs.600<i class="fa-solid fa-angle-down"></i></button>
             <button id="food_Online"> Less than Rs.300<i class="fa-solid fa-angle-down"></i></button>
         </div><br><br>
-     </main>
+
+        <div id="filter-popup">
+            <div id="filter-left">
+                <div class="filter-option" data-filter="sort">Sort</div>
+                <div class="filter-option" data-filter="delivery-time">Delivery Time</div>
+                <div class="filter-option" data-filter="rating">Rating</div>
+                <div class="filter-option" data-filter="relevance">Relevance</div>
+                <div class="filter-option" data-filter="cost-low-high">Cost Low to High</div>
+                <div class="filter-option" data-filter="cost-high-low">Cost High to Low</div>
+            </div>
+
+            <div id="filter-right"> </div>
+
+            <div class="filter-footer">
+                <button id="clear-filters">Clear Filters</button>
+                <button>Apply Filters</button>
+                <button id="close-popup">Close</button>
+            </div>
+
+            <div id="filter-popup" style="display: none;">
+                <div id="filter-left">
+                    <div class="filter-option" data-filter="sort">Sort</div>
+
+                </div>
+                <div id="filter-right"> </div>
+
+                <div class="filter-footer" style="display: none;">
+                    <button id="clear-filters">Clear Filters</button>
+                    <button>Apply Filters</button>
+                    <button id="close-popup">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
 </body>
 </html> 

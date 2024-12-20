@@ -242,3 +242,54 @@ header {
 	padding: 20px;
 }
 
+#filter-popup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	background: #fff;
+	border-left: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	overflow-y: auto;
+	z-index: 1000;
+}
+
+#filter-left {
+	padding: 20px;
+	border-right: 1px solid #ddd;
+}
+
+#filter-right {
+	padding: 20px;
+}
+
+.filter-footer {
+	padding: 20px;
+	border-top: 1px solid #ddd;
+	text-align: right;
+}
+
+.filter-option {
+	cursor: pointer;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.filter-option:hover {
+	background: #f0f0f0;
+}
+
+#filter-button {
+	color: #000;
+	border: 5px solid #e0e0e0;
+	border-radius: 25px;
+	padding: 10px 20px;
+	font-size: 13px;
+	font-weight: 900;
+	margin: 8px 0;
+	text-align: center;
+	width: 120px;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
