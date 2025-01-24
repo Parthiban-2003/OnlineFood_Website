@@ -18,11 +18,11 @@
             <div>
                 <h1><b>Others</b></h1>
             </div>
-            <div class="menu-icon">
+            <div class="menu-icon" onclick="toggleMenu()">
                 <i class="fa-solid fa-angle-down"></i>
             </div>
 
-            <div id="menu" class="menu">
+            <div id="menu" class="menu" onclick="toggleMenu()">
                 <a href="#" class="close-icon">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
@@ -30,7 +30,7 @@
 
                 <div id="search-container">
                     <input type="text" id="search-input" placeholder="Enter food name....">
-                    <button id="search">Search</button>
+                    <button id="search" onclick="searchFood()">Search</button>
                 </div>
 
                 <div id="food-details"></div>
@@ -735,6 +735,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/OnlineFood_Website/Assert/JS/Script.js"></script>
 </body>
 </html> 
