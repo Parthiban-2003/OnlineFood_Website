@@ -16,26 +16,26 @@ document.getElementById('carousel-right').addEventListener('click', () =>
     });
 });
 
-//function toggleMenu()
-//{
-//    const menu = document.getElementById('menu');
-//    if(menu.style.display === 'block')
-//    {
-//        menu.style.display = 'none';
-//    } else
-//    {
-//        menu.style.display = 'block';
-//    }
-//}
+function togglemenu()
+{
+    const menu = document.getelementbyid('menu');
+    if(menu.style.display === 'block')
+    {
+        menu.style.display = 'none';
+    } else
+    {
+        menu.style.display = 'block';
+    }
+}
 
-//document.getElementById('scroll-left').addEventListener('click', function()
-//{
-//    const container = document.querySelector('.food-scroll');
-//    container.scrollBy({ left: -200, behavior: 'smooth' });
-//});
+document.getelementbyid('scroll-left').addeventlistener('click', function()
+{
+    const container = document.queryselector('.food-scroll');
+    container.scrollby({ left: -200, behavior: 'smooth' });
+});
 
-//document.getElementById('scroll-right').addEventListener('click', function()
-//{
-//    const container = document.querySelector('.food-scroll');
-//    container.scrollBy({ left: 200, behavior: 'smooth' });
-//});
+document.getelementbyid('scroll-right').addeventlistener('click', function()
+{
+    const container = document.queryselector('.food-scroll');
+    container.scrollby({ left: 200, behavior: 'smooth' });
+});
