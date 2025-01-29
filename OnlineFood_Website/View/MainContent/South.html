@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Order Food Online
+    </title>
+    <link rel="stylesheet" type="text/css" href="/OnlineFood_Website/Assert/CSS/Core/Styles.CSS">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div id="header_Part">
+            <img src="/OnlineFood_Website/Assert/Image/logo.svg"><br><br><br>
+            <div>
+                <h1><b>Others</b></h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div id="menu" class="menu" onclick="toggleMenu()">
+                <a href="#" class="close-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <br><br>
+
+                <div id="search-container">
+                    <input type="text" id="search-input" placeholder="Enter food name....">
+                    <button id="search" onclick="searchFood()">Search</button>
+                </div>
+
+                <div id="food-details"></div>
+                <br><br>
+                <div class="location-info">
+                    <h3><i class="fa-solid fa-location-crosshairs"></i> <a href="https://www.google.co.in/maps/place/%E0%AE%A4%E0%AF%87%E0%AE%A9%E0%AE%BF,+%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D+%E0%AE%A8%E0%AE%BE%E0%AE%9F%E0%AF%81/@10.0159694,77.4221713,13z/data=!3m1!4b1!4m6!3m5!1s0x3b071353e94a7877:0x962bf8fd53981722!8m2!3d10.0079322!4d77.4735441!16zL20vMDR0dnF3?entry=ttu">Get Current Location</a></h3>
+                    <p>Using GPS</p>
+                </div>
+            </div>
+
+            <nav class="food_Nav">
+                <ul>
+                    <li>
+                        <a href="corporate.html">
+                            <i class="fa-brands fa-page4"></i>
+                            <span class="link-text"><b>Swiggy Corporate</b></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="search.html">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            <span class="link-text"><b>Search</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="offers.html">
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="link-text"><b>Offers</b> </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="help.html">
+                            <i class="fa-brands fa-hire-a-helper"></i>
+                            <span class="link-text"><b>Help</b> <b>us</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signin.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="link-text"><b>Sign In</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="card.html">
+                            <i class="fa-solid fa-id-card-clip"></i>
+                            <span class="link-text"><b>Card</b></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 style="font-weight: 700;font-size: 30px;text-indent: 30px;"> South Indian</h1>
+        <p style="font-weight: 300;text-indent: 30px;">Explore hot & spicy dishes that are a specialty of South India.</p>
+        <div id="cc">
+            <button id="pp"><a href="">Filter Choice<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href="">sort By Food<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href=""> Fast Delivery<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href=""> New on swiggy<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href=""> Ratings 4.0+<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href="">Pure Veg dishs<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href="">Offers Now<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href="">Rs.300-rs.600<i class="fa-solid fa-angle-down"></i></a></button>
+            <button id="pp"><a href=""> Less than Rs.300<i class="fa-solid fa-angle-down"></i></a></button>
+        </div><br><br>
