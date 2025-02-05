@@ -363,6 +363,29 @@ header {
 	opacity: 0.8;
 }
 
+#south_dish {
+	display: flex;
+	gap: 10px;
+}
+
+.main-content {
+	flex: 1;
+	padding: 20px;
+}
+
+#choice_button {
+	color: #000;
+	border: 5px solid #e0e0e0;
+	border-radius: 25px;
+	padding: 10px 20px;
+	font-size: 13px;
+	font-weight: 900;
+	margin: 8px 0;
+	text-align: center;
+	width: 120px;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
 footer {
 	background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
 	color: #ffffff;
