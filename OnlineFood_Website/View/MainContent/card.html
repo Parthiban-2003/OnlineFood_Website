@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Order Food Online
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <img src="img/logo.svg"><br><br><br>
+            <div>
+                <h1><b>Others</b></h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div id="menu" class="menu">
+                <a href="#" onclick="toggleMenu()" class="close-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <br><br>
+                <input type="text" id="search-bar" placeholder="Search for area, street" class="searchbar">
+                <br><br>
+                <div class="location-info">
+                    <h3><i class="fa-solid fa-location-crosshairs"></i> Get Current Location</h3>
+                    <p>Using GPS</p>
+                </div>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li>
+                        <a href="corporate.html">
+                            <i class="fa-brands fa-page4"></i>
+                            <span class="link-text"><b>Swiggy Corporate</b></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="search.html">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                            <span class="link-text"><b>Search</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="offers.html">
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="link-text"><b>Offers</b> </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="help.html">
+                            <i class="fa-brands fa-hire-a-helper"></i>
+                            <span class="link-text"><b>Help</b> <b>us</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signin.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="link-text"><b>Sign In</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="card.html">
+                            <i class="fa-solid fa-id-card-clip"></i>
+                            <span class="link-text"><b>Card</b></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="vt">
+        <div class="card">
+            <a href="Payment.html"><img src="img/a1.avif" alt="Food Item" class="card-img"></a>
+            <div class="card-body">
+                <h2 class="card-title">Delicious Burger</h2>
+                <p class="card-description">A juicy beef patty with lettuce, tomato, and cheese, served in a fresh bun.</p>
+                <p class="card-price">$19.99</p>
+                <a href="Payment.html"><button class="order-button">ADD NOW</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="Payment.html"><img src="img/b22.avif" alt="Food Item" class="card-img"></a>
+            <div class="card-body">
+                <h2 class="card-title">Delicious Biriyani</h2>
+                <p class="card-description">A Chicken biriyani is very delicious and tasty really amazing.</p>
+                <p class="card-price">$230.00</p>
+                <a href="Payment.html"><button class="order-button">ADD NOW</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="ADD NOW">
+        <h2 style="text-align: center;font-size: 30px;">
+            Review your order and address details to avoid cancellations
+        </h2>
+
+        <p style="font-size: 20px;"><span style="color: red;">Note:</span>if you cancel within 60 seconds of placing your order, a 100% refund will be issued. No refund for cancellations made after 60 seconds.</p>
+        <p style="font-size: 20px;">Avoid cancellation as it leads to food wastage. </p>
+
+        <a href="">More Details </a>
+</body>
+</html>
