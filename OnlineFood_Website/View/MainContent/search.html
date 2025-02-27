@@ -186,5 +186,46 @@
                     </div>
                 </div>
     </section>
+    <script>
+        const foods = [
+            { name: "burger with juice", details: "A burger  is sweet and crunchy.", img: "img/a1.avif" },
+            { name: "pizza chocolate", details: "A long, chocolate pizza that is soft and sweet.", img: "img/a2.avif" },
+            { name: "pizza veg", details: "An pizza vegetable that is crunchy and sweet.", img: "img/a3.avif" },
+            { name: "burger", details: "A delicious pie made with burger.", img: "img/a4.avif" },
+            { name: "burger combo", details: "A delicious pie made with burger point and king.", img: "img/a5.avif" },
+            { name: "biriyani", details: "Chicken Biriyani.", img: "img/a10.avif" },
+            { name: "biriyani offers", details: "Theni RR Biriyani Unavagam", img: "img/b21.avif" },
+            { name: "biriyani combo", details: "Mutton Biriyani", img: "img/b22.avif" },
+            { name: "biriyani masala", details: "Bucket Biriyani.", img: "img/b24.avif" },
+        ];
+
+        function searchFood()
+        {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const detailsDiv = document.getElementById('food-details');
+            detailsDiv.innerHTML = "";
+
+            const matchingFoods = foods.filter(food => food.name.toLowerCase().includes(input));
+
+            if(matchingFoods.length > 0)
+            {
+                matchingFoods.forEach(food =>
+                {
+                    detailsDiv.innerHTML += `
+                            <div class="food-item">
+                                <img src="${food.img}" alt="${food.name}">
+                                <div class="details">
+                                    <h3>${food.name}</h3>
+                                    <p>${food.details}</p>
+                                </div>
+                            </div>
+                        `;
+                });
+            } else
+            {
+                detailsDiv.innerHTML = "<p>Food not found</p>";
+            }
+        }
+    </script>
 </body>
 </html>
