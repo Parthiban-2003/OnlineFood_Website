@@ -132,3 +132,47 @@ document.addEventListener('DOMContentLoaded', function()
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function()
+{
+    const ppButton = document.getElementById('pp');
+    const filterPopup = document.getElementById('filter-popup');
+    const closePopup = document.getElementById('close-popup');
+    const filterRight = document.getElementById('filter-right');
+    const filterFooter = document.querySelector('.filter-footer');
+
+    const filterOptions = {
+        'sort': [
+            { label: 'Price' },
+            { label: 'Popularity' }
+        ],
+
+    };
+
+    ppButton.addEventListener('click', function()
+    {
+        filterPopup.style.display = 'block';
+        updateRightSide(filterOptions['sort']);
+    });
+
+    closePopup.addEventListener('click', function()
+    {
+        filterPopup.style.display = 'none';
+    });
+
+    function updateRightSide(filters)
+    {
+        filterRight.innerHTML = '<h4>Select Filters</h4>';
+
+        filters.forEach(filter =>
+        {
+            const label = document.createElement('label');
+            label.innerHTML = `<input type="checkbox" name="${filter.value}" value="${filter.value}"> ${filter.label}`;
+            filterRight.appendChild(label);
+            filterRight.appendChild(document.createElement('br'));
+        });
+
+        filterFooter.style.display = 'block';
+    }
+
+});
