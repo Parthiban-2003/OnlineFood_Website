@@ -174,5 +174,20 @@ document.addEventListener('DOMContentLoaded', function()
 
         filterFooter.style.display = 'block';
     }
+    document.getElementById('clear-filters').addEventListener('click', function()
+    {
+        document.querySelectorAll('#filter-right input[type="checkbox"]').forEach(checkbox =>
+        {
+            checkbox.checked = false;
+        });
+    });
 
+    document.querySelectorAll('.filter-footer button').forEach(button =>
+    {
+        button.addEventListener('click', function()
+        {
+            alert(`Applying filter: ${this.textContent}`);
+            filterPopup.style.display = 'none';
+        });
+    });
 });
