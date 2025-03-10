@@ -191,3 +191,45 @@ document.addEventListener('DOMContentLoaded', function()
         });
     });
 });
+
+const foods = [
+    { name: "Theni", details: "TamilNadu,India." },
+    { name: "Theni-Allinagaram", details: "Allinagaram,Theni,TamilNadu,Theni." },
+    { name: "Theni-NRT", details: "NRT Nagar,Theni,TamilNadu,Theni." },
+    { name: "Theni Old-Bus Stand", details: "543-po,Old BusStand,Theni,TamilNadu,Theni." },
+    { name: "Theni-Suppan", details: "Suppan Ragavan Colony,Theni,TamilNadu,Theni." },
+    { name: "Theni-Railaway", details: "Railway Station,Theni,TamilNadu,Theni.." },
+    { name: "Theni New-Bus Stand", details: "123-po,New BusStand,Theni,TamilNadu,Theni." },
+    { name: "Theni-vettri", details: "Vettri Cinimas,Theni,TamilNadu,Theni." },
+    { name: "Theni-Eadamal", details: "12,Edamal street,Theni,TamilNadu,Theni.." },
+];
+
+function searchFood()
+{
+    const input = document.getElementById('search-input').value.toLowerCase();
+    const detailsDiv = document.getElementById('food-details');
+    detailsDiv.innerHTML = "";
+
+    const matchingFoods = foods.filter(food => food.name.toLowerCase().includes(input));
+
+    if(matchingFoods.length > 0)
+    {
+        matchingFoods.forEach(food =>
+        {
+            let icon = 'fa-solid fa-location-dot';
+            detailsDiv.innerHTML += `
+                <div class="food-item">
+                    <div class="details">
+                        <h3><i class="fa ${icon}"></i> ${food.name}</h3>
+                        <p>${food.details}</p>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    else
+    {
+        detailsDiv.innerHTML = "<p>Food not found</p>";
+    }
+}
