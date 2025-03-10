@@ -201,7 +201,7 @@ const foods = [
     { name: "Theni-Railaway", details: "Railway Station,Theni,TamilNadu,Theni.." },
     { name: "Theni New-Bus Stand", details: "123-po,New BusStand,Theni,TamilNadu,Theni." },
     { name: "Theni-vettri", details: "Vettri Cinimas,Theni,TamilNadu,Theni." },
-    { name: "Theni-Eadamal", details: "12,Edamal street,Theni,TamilNadu,Theni.." },
+    { name: "Theni-Eadamal", details: "12,Edamal street,Theni,TamilNadu,Theni." },
 ];
 
 function searchFood()
