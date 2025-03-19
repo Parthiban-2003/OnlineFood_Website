@@ -4,127 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-</head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-
-    #search-container {
-        margin: 20px;
-        max-width: 600px;
-        padding-left: 220px;
-        border-radius: 8px;
-        text-align: center;
-    }
-
-    #search-input {
-        width: calc(100% - 100px);
-        padding: 10px;
-        font-size: 16px;
-        border: 2px solid #ccc;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    button {
-        color: #000;
-        border: 5px solid #e0e0e0;
-        border-radius: 25px;
-        padding: 10px 20px;
-        font-size: 13px;
-        font-weight: 900;
-        margin: 8px 0;
-        text-align: center;
-        width: 95px;
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
-
-    #search-button {
-        width: 90px;
-        padding: 10px;
-        font-size: 16px;
-        border-left: none;
-        color: #fff;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        outline: none;
-        transition: background-color 0.3s, border-color 0.3s;
-    }
-
-        #search-button:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
         }
 
-    #search-container {
-        margin: 20px;
-    }
-
-    #food-details {
-        margin-top: 20px;
-        padding-left: 320px;
-    }
-
-    .food-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-        .food-item img {
-            max-width: 150px;
-            height: auto;
-            margin-right: 20px;
+        #search-container {
+            margin: 20px;
+            max-width: 600px;
+            padding-left: 220px;
+            border-radius: 8px;
+            text-align: center;
         }
 
-        .food-item .details {
+        #search-input {
+            width: calc(100% - 100px);
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        button {
+            color: #000;
+            border: 5px solid #e0e0e0;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 900;
+            margin: 8px 0;
+            text-align: center;
+            width: 95px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        #search-button {
+            width: 90px;
+            padding: 10px;
+            font-size: 16px;
+            border-left: none;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+            #search-button:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        #search-container {
+            margin: 20px;
+        }
+
+        #food-details {
+            margin-top: 20px;
+            padding-left: 320px;
+        }
+
+        .food-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .food-wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .food-scroll {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+            width: 100%;
             flex: 1;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
-
-        .food-item h3 {
-            margin: 0 0 10px 0;
-        }
-
-        .food-item p {
-            margin: 0;
-        }
-
-    .food-wrapper {
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-
-    .food-scroll {
-        display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        white-space: nowrap;
-        width: 100%;
-        flex: 1;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
 
         .food-scroll::-webkit-scrollbar {
             display: none;
         }
 
-    .food-show {
-        display: inline-block;
-        text-align: center;
-        margin-right: 10px;
-    }
-
-        .food-show img {
-            width: 100px;
-            height: 100px;
-            border-radius: 8px;
+        .food-show {
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
         }
-</style>
+
+            .food-show img {
+                width: 100px;
+                height: 100px;
+                border-radius: 8px;
+            }
+    </style>
+</head>
 <body>
     <section>
         <div id="search-container">
@@ -185,6 +167,8 @@
                         <img src="img/h15.avif" alt="food 5">
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
     <script>
         const foods = [
@@ -212,14 +196,14 @@
                 matchingFoods.forEach(food =>
                 {
                     detailsDiv.innerHTML += `
-                                    <div class="food-item">
-                                        <img src="${food.img}" alt="${food.name}">
-                                        <div class="details">
-                                            <h3>${food.name}</h3>
-                                            <p>${food.details}</p>
-                                        </div>
-                                    </div>
-                                `;
+                                                        <div class="food-item">
+                                                            <img src="${food.img}" alt="${food.name}">
+                                                            <div class="details">
+                                                                <h3>${food.name}</h3>
+                                                                <p>${food.details}</p>
+                                                            </div>
+                                                        </div>
+                                                    `;
                 });
             } else
             {
