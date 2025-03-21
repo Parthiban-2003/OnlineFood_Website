@@ -1,19 +1,21 @@
-body {
+body 
+{
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
 	background-color: #f4f4f4;
 }
 
-
-header {
+header 
+{
 	background-color: #fff;
 	border-bottom: 2px solid #ddd;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 10px 20px;
 }
 
-#header_Part {
+#header_Part 
+{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -22,16 +24,17 @@ header {
 	flex-wrap: wrap;
 }
 
-
-#header_Part img {
+#header_Part img 
+{
 	width: 65px;
 	height: 65px;
 	border-radius: 50%;
 	margin-left: 0px;
 	transition: transform 0.3s ease-in-out;
 }
-
-#header_Part img:hover {
+	
+#header_Part img:hover 
+{
 	transform: scale(1.1);
 }
 
@@ -45,7 +48,8 @@ header {
 	transition: color 0.3s ease-in-out;
 }
 
-#header_Part h1:hover {
+#header_Part h1:hover
+{
 	color: #ff5200;
 }
 
@@ -79,31 +83,37 @@ header {
 	transition: color 0.3s, transform 0.3s;
 }
 
-.food_Nav a:hover {
+.food_Nav a:hover
+{
 	color: #ff5200;
 	transform: scale(1.1);
 }
 
-.food_Nav i {
+.food_Nav i 
+{
 	font-size: 20px;
 	margin-right: 8px;
 }
 
-.link-text {
+.link-text 
+{
 	font-weight: bold;
 }
 
-.food_Menu {
+.food_Menu 
+{
 	padding: 20px;
 }
 
-.food-wrapper {
+.food-wrapper 
+{
 	display: flex;
 	align-items: center;
 	position: relative;
 }
 
-.food-scroll {
+.food-scroll 
+{
 	display: flex;
 	overflow-x: auto;
 	scroll-behavior: smooth;
@@ -114,23 +124,27 @@ header {
 	scrollbar-width: none;
 }
 
-.food-scroll::-webkit-scrollbar {
+.food-scroll::-webkit-scrollbar
+{
 	display: none;
 }
 
-.food-show {
+.food-show 
+{
 	display: inline-block;
 	text-align: center;
 	margin-right: 10px;
 }
 
-.food-show img {
+.food-show img 
+{
 	width: 300px;
 	height: 300px;
 	border-radius: 8px;
 }
 
-.scroll-button {
+.scroll-button
+{
 	background-color: #ff5200;
 	color: white;
 	border: none;
@@ -143,19 +157,23 @@ header {
 	transform: translateY(-50%);
 }
 
-#scroll-left {
+#scroll-left 
+{
 	left: 0;
 }
 
-#scroll-right {
+#scroll-right 
+{
 	right: 0;
 }
 
-.food_Resturent {
+.food_Resturent
+{
 	padding: 20px;
 }
 
-.carousel-container {
+.carousel-container
+{
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -164,18 +182,21 @@ header {
 	overflow: hidden;
 }
 
-.carousel-wrapper {
+.carousel-wrapper
+{
 	display: flex;
 	overflow: hidden;
 	width: 100%;
 }
 
-.carousel {
+.carousel 
+{
 	display: flex;
 	transition: transform 0.5s ease;
 }
 
-.carousel-item {
+.carousel-item
+{
 	flex: 0 0 300px;
 	margin: 0 10px;
 	border: 1px solid #ddd;
@@ -188,17 +209,22 @@ header {
 	height: 350px;
 }
 
-.carousel-item img {
+.carousel-item img 
+{
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
 }
 
-.carousel-item h2, .carousel-item h3, .carousel-item p {
-	margin: 10px 0;
+.carousel-item h2, 
+.carousel-item h3, 
+.carousel-item p 
+{
+		margin: 10px 0;
 }
 
-.carousel-button {
+.carousel-button 
+{
 	background: #ff5200;
 	color: #fff;
 	border: none;
@@ -211,15 +237,18 @@ header {
 	z-index: 10;
 }
 
-#carousel-left {
+#carousel-left 
+{
 	left: 10px;
 }
 
-#carousel-right {
+#carousel-right 
+{
 	right: 10px;
 }
 
-#food_Online {
+#food_Online 
+{
 	color: #000;
 	border: 5px solid #e0e0e0;
 	border-radius: 25px;
@@ -232,17 +261,20 @@ header {
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-#food_Deley {
+#food_Deley 
+{
 	display: flex;
 	gap: 10px;
 }
 
-.main-content {
+.main-content 
+{
 	flex: 1;
 	padding: 20px;
 }
 
-#filter-popup {
+#filter-popup 
+{
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -256,32 +288,38 @@ header {
 	z-index: 1000;
 }
 
-#filter-left {
+#filter-left 
+{
 	padding: 20px;
 	border-right: 1px solid #ddd;
 }
 
-#filter-right {
+#filter-right 
+{
 	padding: 20px;
 }
 
-.filter-footer {
+.filter-footer 
+{
 	padding: 20px;
 	border-top: 1px solid #ddd;
 	text-align: right;
 }
 
-.filter-option {
+.filter-option 
+{
 	cursor: pointer;
 	padding: 10px;
 	border-bottom: 1px solid #ddd;
 }
 
-.filter-option:hover {
+.filter-option:hover 
+{
 	background: #f0f0f0;
 }
 
-#filter-button {
+#filter-button 
+{
 	color: #000;
 	border: 5px solid #e0e0e0;
 	border-radius: 25px;
@@ -294,7 +332,8 @@ header {
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.gallery-items {
+.gallery-items 
+{
 	color: #000;
 	border: 5px solid #e0e0e0;
 	border-radius: 25px;
@@ -308,7 +347,8 @@ header {
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.gallery {
+.gallery 
+{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, auto);
@@ -316,7 +356,8 @@ header {
 	padding: 16px;
 }
 
-.gallery-item {
+.gallery-item 
+{
 	border: 1px solid #ddd;
 	border-radius: 8px;
 	overflow: hidden;
@@ -324,56 +365,69 @@ header {
 	text-align: center;
 }
 
-.gallery-item img {
+.gallery-item img 
+{
 	width: 300px;
 	height: 200px;
 	display: block;
 }
 
-.gallery-item h2 {
+.gallery-item h2 
+{
 	margin: 8px 0;
 }
 
-.gallery-item h3 {
+.gallery-item h3 
+{
 	margin: 8px 0;
 	color: #555;
 }
 
-.gallery-item p {
+.gallery-item p 
+{
 	margin: 8px 16px;
 	font-size: 14px;
 	color: #666;
 }
 
-.gallery-item h2, .gallery-item h3, .gallery-item p {
+.gallery-item h2, 
+.gallery-item h3, 
+.gallery-item p 
+{
 	margin: 0;
 	padding: 5px;
 }
 
-.gallery-item h2 {
+.gallery-item h2 
+{
 	font-size: 1.2em;
 	color: #333;
 }
 
-.gallery-item:hover {
+.gallery-item:hover 
+{
 	transform: scale(1.05);
 }
 
-.gallery-item:hover img {
+.gallery-item:hover img 
+{
 	opacity: 0.8;
 }
 
-#south_dish {
+#south_dish 
+{
 	display: flex;
 	gap: 10px;
 }
 
-.main-content {
+.main-content
+{
 	flex: 1;
 	padding: 20px;
 }
 
-.main-corporate {
+.main-corporate
+{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
@@ -382,13 +436,15 @@ header {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.left-side {
+.left-side 
+{
 	flex: 0 0 20%;
 	padding-right: 10px;
 	margin-left: 10px;
 }
 
-.right-side {
+.right-side 
+{
 	flex: 0 0 40%;
 	display: flex;
 	flex-direction: column;
@@ -396,25 +452,29 @@ header {
 	margin-left: 10px;
 }
 
-	.right-side > div {
-		margin-bottom: 20px;
-	}
+.right-side > div 
+{
+	margin-bottom: 20px;
+}
 
 
-.search-container {
+.search-container 
+{
 	width: 300px;
 	margin: 50px auto;
 	position: relative;
 }
 
-#foodSearch {
+#foodSearch
+{
 	width: 100%;
 	padding: 8px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
 
-.results {
+.results 
+{
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -427,17 +487,19 @@ header {
 	z-index: 10;
 }
 
-.result-item {
+.result-item 
+{
 	padding: 8px;
 	cursor: pointer;
 }
 
-	.result-item:hover {
-		background-color: #f0f0f0;
-	}
+.result-item:hover 
+{
+	background-color: #f0f0f0;
+}
 
-
-#filter-popup {
+#filter-popup 
+{
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -451,32 +513,38 @@ header {
 	z-index: 1000;
 }
 
-#filter-left {
+#filter-left 
+{
 	padding: 20px;
 	border-right: 1px solid #ddd;
 }
 
-#filter-right {
+#filter-right 
+{
 	padding: 20px;
 }
 
-.filter-footer {
+.filter-footer 
+{
 	padding: 20px;
 	border-top: 1px solid #ddd;
 	text-align: right;
 }
 
-.filter-option {
+.filter-option 
+{
 	cursor: pointer;
 	padding: 10px;
 	border-bottom: 1px solid #ddd;
 }
 
-	.filter-option:hover {
-		background: #f0f0f0;
-	}
+.filter-option:hover 
+{
+	background: #f0f0f0;
+}
 
-#filter-button {
+#filter-button 
+{
 	color: #000;
 	border: 5px solid #e0e0e0;
 	border-radius: 25px;
@@ -489,8 +557,8 @@ header {
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-
-#choice_button {
+#choice_button 
+{
 	color: #000;
 	border: 5px solid #e0e0e0;
 	border-radius: 25px;
@@ -503,7 +571,8 @@ header {
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-#card-item {
+#card-item 
+{
 	font-family: Arial, sans-serif;
 	display: flex;
 	justify-content: center;
@@ -518,7 +587,8 @@ header {
 	padding-top: 40px;
 }
 
-.card {
+.card 
+{
 	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -530,39 +600,46 @@ header {
 	justify-content: space-between;
 }
 
-	.card:hover {
-		transform: scale(1.05);
-	}
+.card:hover 
+{
+	transform: scale(1.05);
+}
 
-.card-img {
+.card-img 
+{
 	width: 200px;
 	height: auto;
 	border-bottom: 1px solid #ddd;
 }
 
-.card-body {
+.card-body 
+{
 	padding: 15px;
 }
 
-.card-title {
+.card-title 
+{
 	margin: 0;
 	font-size: 1.5em;
 	color: #333;
 	margin-top: 35px;
 }
 
-.card-description {
+.card-description 
+{
 	color: #666;
 	margin: 10px 0;
 }
 
-.card-price {
+.card-price 
+{
 	font-size: 1.2em;
 	color: #e74c3c;
 	margin: 10px 0;
 }
 
-.order-button {
+.order-button 
+{
 	background-color: #e74c3c;
 	color: #fff;
 	border: none;
@@ -573,18 +650,19 @@ header {
 	transition: background-color 0.3s;
 }
 
-	.order-button:hover {
-		background-color: #c0392b;
-	}
+.order-button:hover{
+	background-color: #c0392b;
+}
 
-
-footer {
+footer 
+{
 	background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
 	color: #ffffff;
 	padding: 40px 20px;
 }
 
-.footer-container {
+.footer-container 
+{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -592,29 +670,34 @@ footer {
 	margin: auto;
 }
 
-.footer-section {
+.footer-section
+{
 	flex: 1 1 200px;
 	margin: 20px;
 }
 
-.footer-section h3 {
+.footer-section h3 
+{
 	font-size: 20px;
 	border-bottom: 2px solid #ff5200;
 	padding-bottom: 10px;
 	margin-bottom: 15px;
 }
 
-.footer-section ul {
+.footer-section ul 
+{
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.footer-section ul li {
+.footer-section ul li 
+{
 	margin-bottom: 10px;
 }
 
-.footer-section ul li a {
+.footer-section ul li a 
+{
 	color: #ffffff;
 	text-decoration: none;
 	transition: color 0.3s ease;
@@ -631,34 +714,33 @@ footer {
 	padding-left: 0;
 }
 
-.social-links li
+.social-links li 
 {
-	margin-right: 15px;
+		margin-right: 15px;
 }
 
-.social-icon
+.social-icon 
 {
 	color: #ffffff;
 	font-size: 24px;
 	transition: color 0.3s ease;
 }
 
-.social-icon:hover
+.social-icon:hover 
 {
-	color: #ff5200;
+		color: #ff5200;
 }
 
-.app-links
+.app-links 
 {
 	display: flex;
 	padding-left: 0;
 }
-
+	
 .app-links li 
 {
 	margin-right: 15px;
 }
-
 
 .app-links li a
 {
@@ -667,7 +749,7 @@ footer {
 	font-weight: bold;
 }
 
-.footer-bottom
+.footer-bottom 
 {
 	text-align: center;
 	margin-top: 20px;
@@ -675,7 +757,7 @@ footer {
 	padding-top: 10px;
 }
 
-.footer-bottom p
+.footer-bottom p 
 {
 	margin: 10px 0;
 }
@@ -686,7 +768,7 @@ footer {
 	text-decoration: none;
 }
 
-.footer-bottom a:hover
+.footer-bottom a:hover 
 {
 	text-decoration: underline;
 }

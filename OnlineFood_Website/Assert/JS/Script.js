@@ -22,7 +22,8 @@ function togglemenu()
     if(menu.style.display === 'block')
     {
         menu.style.display = 'none';
-    } else
+    }
+    else
     {
         menu.style.display = 'block';
     }
@@ -49,33 +50,45 @@ document.addEventListener('DOMContentLoaded', function()
     const filterRight = document.getElementById('filter-right');
     const filterFooter = document.querySelector('.filter-footer');
 
-    const filterOptions = {
-        'sort': [
+    const filterOptions =
+    {
+        'sort': 
+        [
             { label: 'Price', value: 'price' },
             { label: 'Popularity', value: 'popularity' }
         ],
-        'delivery-time': [
+
+        'delivery-time': 
+        [
             { label: 'Under 1 hour', value: 'under-1-hour' },
             { label: '1-2 hours', value: '1-2-hours' }
         ],
-        'rating': [
+
+        'rating': 
+        [
             { label: '1 Star', value: '1-star' },
             { label: '2 Stars', value: '2-stars' },
             { label: '3 Stars', value: '3-stars' },
             { label: '4 Stars', value: '4-stars' },
             { label: '5 Stars', value: '5-stars' }
         ],
-        'relevance': [
+
+        'relevance': 
+        [
             { label: 'High', value: 'high' },
             { label: 'Medium', value: 'medium' },
             { label: 'Low', value: 'low' }
         ],
-        'cost-low-high': [
+
+        'cost-low-high':
+        [
             { label: 'Low', value: 'low' },
             { label: 'Medium', value: 'medium' },
             { label: 'High', value: 'high' }
         ],
-        'cost-high-low': [
+
+        'cost-high-low': 
+        [
             { label: 'High', value: 'high' },
             { label: 'Medium', value: 'medium' },
             { label: 'Low', value: 'low' }
@@ -141,8 +154,10 @@ document.addEventListener('DOMContentLoaded', function()
     const filterRight = document.getElementById('filter-right');
     const filterFooter = document.querySelector('.filter-footer');
 
-    const filterOptions = {
-        'sort': [
+    const filterOptions =
+    {
+        'sort': 
+        [
             { label: 'Price' },
             { label: 'Popularity' }
         ],
@@ -192,7 +207,8 @@ document.addEventListener('DOMContentLoaded', function()
     });
 });
 
-const foods = [
+const foods = 
+[
     { name: "Theni", details: "TamilNadu,India." },
     { name: "Theni-Allinagaram", details: "Allinagaram,Theni,TamilNadu,Theni." },
     { name: "Theni-NRT", details: "NRT Nagar,Theni,TamilNadu,Theni." },
