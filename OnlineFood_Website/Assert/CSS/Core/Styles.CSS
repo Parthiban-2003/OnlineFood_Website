@@ -654,8 +654,22 @@ header
 	background-color: #c0392b;
 }
 
-footer 
-{
+.DineOut_Page {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 70px;
+	padding-right: 300px;
+	padding-top: 40px;
+}
+
+footer {
 	background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
 	color: #ffffff;
 	padding: 40px 20px;
